@@ -1,0 +1,66 @@
+/* Class = "UITextField"; text = "11"; ObjectID = "1Lj-GW-27f"; */
+"1Lj-GW-27f.text" = "11";
+
+/* Class = "UITextField"; text = "12"; ObjectID = "5zV-oD-E5X"; */
+"5zV-oD-E5X.text" = "12";
+
+/* Class = "UILabel"; text = "activation audio serveur"; ObjectID = "6Jg-z2-1jd"; */
+"6Jg-z2-1jd.text" = "audio activation on the server";
+
+/* Class = "UILabel"; text = "taille police bulle"; ObjectID = "7sy-rz-2um"; */
+"7sy-rz-2um.text" = "bubble font size";
+
+/* Class = "UILabel"; text = "Entrez le numéro du port jarvis-api"; ObjectID = "90f-Vt-M8P"; */
+"90f-Vt-M8P.text" = "port number for jarvis api";
+
+/* Class = "UIBarButtonItem"; title = "help"; ObjectID = "620-bX-HHy"; */
+"620-bX-HHy.title" = "help";
+
+/* Class = "UIBarButtonItem"; title = "paramètres"; ObjectID = "Ago-0t-h8j"; */
+"Ago-0t-h8j.title" = "settings";
+
+/* Class = "UITextView"; text = "Pour toute question, ou encouragement, ou demande d'évolution, ou bug détecté, n'hésitez pas à contacter l'auteur en remplissant le formulaire ci-dessous:"; ObjectID = "Kse-Ok-cH0"; */
+"Kse-Ok-cH0.text" = "For any question, or encouragement, or request of evolution, or bug detected, do not hesitate to contact the author by filling the form below:";
+
+/* Class = "UIButton"; normalTitle = "Envoyez votre message"; ObjectID = "Kxi-HZ-ksJ"; */
+"Kxi-HZ-ksJ.normalTitle" = "Send your message";
+
+/* Class = "UITextView"; text = "This is the UITextView"; ObjectID = "Mmy-d9-woF"; */
+"Mmy-d9-woF.text" = "This is the UITextView";
+
+/* Class = "UILabel"; text = "Type de message"; ObjectID = "Mp3-dJ-cvT"; */
+"Mp3-dJ-cvT.text" = "Message type";
+
+/* Class = "UITextField"; placeholder = "http://0.0.0.0 ou http://jarvis.com"; ObjectID = "P0t-wf-3ou"; */
+"P0t-wf-3ou.placeholder" = "http://0.0.0.0 or http://jarvis.com";
+
+/* Class = "UITextView"; text = "- Cliquer sur le micro, puis enregistrez votre demande. - Cliquer une nouvelle fois pour stopper l'enregistrement - lire / écouter la réponse faite par Gladys.  Penser au préalable à paramétrer l'url et le port du serveur sur lequel Gladys est installée. Indiquer également la sortie audio souhaitée."; ObjectID = "Rs9-gF-gZ6"; */
+"Rs9-gF-gZ6.text" = "- Cliquer sur le micro, puis enregistrez votre demande. - Cliquer une nouvelle fois pour stopper l'enregistrement - lire / écouter la réponse faite par Gladys.  Penser au préalable à paramétrer l'url et le port du serveur sur lequel Gladys est installée. Indiquer également la sortie audio souhaitée.";
+
+/* Class = "UILabel"; text = "Entrez la clé définie pour jarvis-api"; ObjectID = "SiT-Au-FwT"; */
+"SiT-Au-FwT.text" = "Enter the key for gladys-api";
+
+/* Class = "UILabel"; text = "Votre message"; ObjectID = "c1h-Pe-JzK"; */
+"c1h-Pe-JzK.text" = "Your message";
+
+/* Class = "UILabel"; text = "activation audio application"; ObjectID = "gsf-ot-Wf3"; */
+"gsf-ot-Wf3.text" = "audio activation on the application";
+
+/* Class = "UILabel"; text = "taille police jarvis"; ObjectID = "jW1-LU-4am"; */
+"jW1-LU-4am.text" = "Jarvis font size";
+
+/* Class = "UINavigationItem"; title = "Gladys"; ObjectID = "kuk-be-FIe"; */
+"kuk-be-FIe.title" = "Gladys";
+
+/* Class = "UILabel"; text = "Entrez l'URL ou l'IP de votre serveur jarvis"; ObjectID = "paB-0a-2t8"; */
+"paB-0a-2t8.text" = "Enter the URL or IP of your jarvis server";
+
+/* Class = "UILabel"; text = "Votre email"; ObjectID = "tFE-AC-qVR"; */
+"tFE-AC-qVR.text" = "Your email";
+
+/* Class = "UITextField"; placeholder = "facultatif"; ObjectID = "vKa-mS-jIs"; */
+"vKa-mS-jIs.placeholder" = "optional";
+
+/* Class = "UITextField"; placeholder = "8080"; ObjectID = "yb2-VS-qam"; */
+"yb2-VS-qam.placeholder" = "8080";
+

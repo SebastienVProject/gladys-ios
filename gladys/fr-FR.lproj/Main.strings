@@ -1,0 +1,18 @@
+/* Class = "UITextField"; text = "11"; ObjectID = "1Lj-GW-27f"; */
+"1Lj-GW-27f.text" = "11";
+
+/* Class = "UITextField"; text = "12"; ObjectID = "5zV-oD-E5X"; */
+"5zV-oD-E5X.text" = "12";
+
+/* Class = "UIBarButtonItem"; title = "help"; ObjectID = "620-bX-HHy"; */
+"620-bX-HHy.title" = "aide";
+
+/* Class = "UITextView"; text = "This is the UITextView"; ObjectID = "Mmy-d9-woF"; */
+"Mmy-d9-woF.text" = "C'est le UITextView";
+
+/* Class = "UINavigationItem"; title = "gladys"; ObjectID = "kuk-be-FIe"; */
+"kuk-be-FIe.title" = "gladys";
+
+/* Class = "UITextField"; placeholder = "8080"; ObjectID = "yb2-VS-qam"; */
+"yb2-VS-qam.placeholder" = "8080";
+

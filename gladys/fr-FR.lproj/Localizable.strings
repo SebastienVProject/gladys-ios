@@ -1,0 +1,107 @@
+/* font size in the bubble */
+"ParamFont" = "Taille police bulle";
+
+/* font size in the gladys bubble */
+"ParamFontGladys" = "Taille police Gladys";
+
+/* Enter API Key for Gladys */
+"ParamLabelAPIKey" = "Clé de sécurité gladys-api (facultatif)";
+
+/* enabling audio in the application */
+"ParamLabelAudioAppli" = "activer l'audio dans l'application";
+
+/* enabling audio on the server */
+"ParamLabelAudioServeur" = "activer l'audio sur le serveur";
+
+/* Enter port number */
+"ParamLabelPort" = "Numéro de port";
+
+/* Enter URL */
+"ParamLabelUrl" = "URL";
+
+/* Cancel action */
+"actionCancel" = "Annuler";
+
+/* Delete action */
+"actionDelete" = "Supprimer";
+
+/* language code
+ Language code for speech recognizer */
+"codeLangue" = "fr-FR";
+
+/* message of the popup to delete conversation */
+"deletePopupMessage" = "Merci à vous de confirmer la suppression de l'historique";
+
+/* title of the popup to delete conversation */
+"deletePopupTitle" = "Supprimer l'historique";
+
+/* Message from the gladys-ios application */
+"gitIssueMessage" = "(Message provenant de l'application gladys-ios";
+
+/* User in message */
+"gitIssueUser" = ", et laissé par l'utilisateur suivant: ";
+
+/* send your message */
+"helpButtonLabel" = "Envoyer le message";
+
+/* Conclusion text on the help screen */
+"helpConclusion" = "Cliquer sur le micro, puis enregistrez votre demande. Cliquer une nouvelle fois pour stopper l'enregistrement, pui lire et/ou écouter la réponse faite par gladys.
+
+Penser au préalable à paramétrer l'url et le port du serveur sur lequel gladys est installé. Indiquer également la sortie audio souhaitée.";
+
+/* Introductory text on the help screen */
+"helpIntroduction" = "Pour toute question, ou encouragement, ou demande d'évolution, ou bug détecté, n'hésitez pas à me contacter en remplissant le formulaire ci-dessous:";
+
+/* your email */
+"helpLabelEmail" = "Votre email";
+
+/* your message */ 
+"helpLabelMessage" = "Votre message";
+
+/* message type */
+"helpLabelType" = "Type de message";
+
+/* Help label */
+"labelMenuHelp" = "aide";
+
+/* Parameter label */
+"labelMenuParameter" = "paramètres";
+
+/* Bug */
+"pickerBug" = "bug";
+
+/* Encouragement */
+"pickerEncouragement" = "encouragement";
+
+/* Evolution */
+"pickerEvolution" = "evolution";
+
+/* Question */
+"pickerQuestion" = "question";
+
+/* Thank you for entering a valide email Message */
+"popupEmailKOMessage" = "Merci à vous de saisir au préalable un email valide";
+
+/* Thank you for entering a valide email Title */
+"popupEmailKOTitle" = "Saisir un email valide";
+
+/* Thank you for entering a message */
+"popupMessageKOMessage" = "Merci à vous de saisir au préalable un message";
+
+/* Enter a message */
+"popupMessageKOTitle" = "Message vide";
+
+/* message sent successfully */
+"popupSentMessageMessage" = "Message envoyé avec succès";
+
+/* Sent message */
+"popupSentMessageTitle" = "Message envoyé";
+
+/* Technical error */
+"technicalError" = "Erreur rencontrée. \nAvant toute utilisation, merci de vérifier que gladys a été installé sur votre réseau local, que vous avez effectué le paramétrage dans l'appli, et que vous êtes bien connecté en wifi à votre réseau.";
+
+/* APIReponseNotArray */
+"APIReponseNotArray" = "Une erreur a été rencontrée au niveau de l'appel à gladys: ";
+
+/* APIReponseEmptyArray */
+"APIReponseEmptyArray" = "Aucune information a été retournée par gladys";

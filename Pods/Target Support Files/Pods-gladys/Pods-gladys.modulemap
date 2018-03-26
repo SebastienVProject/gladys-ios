@@ -1,0 +1,6 @@
+framework module Pods_gladys {
+  umbrella header "Pods-gladys-umbrella.h"
+
+  export *
+  module * { export * }
+}

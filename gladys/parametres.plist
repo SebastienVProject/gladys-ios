@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>audioApplication</key>
+	<true/>
+	<key>audioServeur</key>
+	<false/>
+	<key>urlGladys</key>
+	<string>http://192.168.xx.xx</string>
+	<key>portGladys</key>
+	<string>8080</string>
+	<key>fontStyle</key>
+	<string>Arial</string>
+	<key>fontSize</key>
+	<integer>13</integer>
+	<key>fontStyleGladys</key>
+	<string>Verdana</string>
+	<key>fontSizeGladys</key>
+	<integer>13</integer>
+	<key>keyApiGladys</key>
+	<string></string>
+</dict>
+</plist>

@@ -1,0 +1,111 @@
+/* font size in the bubble */
+"ParamFont" = "bubble font size";
+
+/* font size in the jarvis bubble */
+"ParamFontJarvis" = "jarvis bubble font size";
+
+/* Enter API Key for Jarvis */
+"ParamLabelAPIKey" = "Enter the key for jarvis-api";
+
+/* enabling audio in the application */
+"ParamLabelAudioAppli" = "enabling audio in the application";
+
+/* enabling audio on the server */
+"ParamLabelAudioServeur" = "enabling audio on the server";
+
+/* Enter port number */
+"ParamLabelPort" = "Enter port number";
+
+/* Enter URL */
+"ParamLabelUrl" = "Enter URL";
+
+/* Cancel action */
+"actionCancel" = "Cancel";
+
+/* Delete action */
+"actionDelete" = "Delete";
+
+/* language code
+   Language code for speech recognizer */
+"codeLangue" = "en";
+
+/* message of the popup to delete conversation */
+"deletePopupMessage" = "Thanks to you for confirming the deletion of the history of the conversations";
+
+/* title of the popup to delete conversation */
+"deletePopupTitle" = "Delete conversation";
+
+/* Message from the gladys-ios application */
+"gitIssueMessage" = "(Message from the gladys-ios application";
+
+/* User in message  */
+"gitIssueUser" = ", and left by the following user: ";
+
+/* send your message */
+"helpButtonLabel" = "Send your message";
+
+/* Conclusion text on the help screen */
+"helpConclusion" = "- Click on the microphone, then save your request.
+            - Click again to stop the recording
+            - read / listen to the answer made by gladys. Think beforehand to fill in the parameters.";
+
+/* Introductory text on the help screen */
+"helpIntroduction" = "For any question, or encouragement, or request of evolution, or bug detected, do not hesitate to contact the author by filling the form below:";
+
+/* your email */
+"helpLabelEmail" = "your email";
+
+/* your message */
+"helpLabelMessage" = "your message";
+
+/* message type */
+"helpLabelType" = "Message type";
+
+/* Help label */ 
+"labelMenuHelp" = "help";
+
+/* Parameter label */
+"labelMenuParameter" = "settings";
+
+/* Bug  */
+"pickerBug" = "bug";
+
+/* Encouragement */
+"pickerEncouragement" = "encouragement";
+
+/* Evolution */
+"pickerEvolution" = "evolution";
+
+/* Question */
+"pickerQuestion" = "question";
+
+/* Thank you for entering a valide email Message */
+"popupEmailKOMessage" = "Thank you for entering a valid email";
+
+/* Thank you for entering a valide email Title */
+"popupEmailKOTitle" = "entering a valide email";
+
+/* Thank you for entering a message */
+"popupMessageKOMessage" = "Thank you for entering a message";
+
+/* Enter a message */
+"popupMessageKOTitle" = "empty message";
+
+/* message sent successfully */
+"popupSentMessageMessage" = "message sent successfully";
+
+/* Sent message */
+"popupSentMessageTitle" = "message sent";
+
+
+/* Technical error */
+"technicalError" = "Error encountered. \nBefore any use, please check that gladys has been installed on your local network, that you have made the settings in the app, and that you are well connected in wifi to your network.";
+
+/* APIReponseNotArray */
+"APIReponseNotArray" = "Error encountered with gladys: ";
+
+
+/* APIReponseEmptyArray */
+"APIReponseEmptyArray" = "No information has been returned by gladys";
+
+
