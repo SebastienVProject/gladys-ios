@@ -1,11 +1,11 @@
 /* font size in the bubble */
 "ParamFont" = "bubble font size";
 
-/* font size in the jarvis bubble */
-"ParamFontJarvis" = "jarvis bubble font size";
+/* font size in the gladys bubble */
+"ParamFontgladys" = "gladys bubble font size";
 
-/* Enter API Key for Jarvis */
-"ParamLabelAPIKey" = "Enter the key for jarvis-api";
+/* Enter API Key for gladys */
+"ParamLabelAPIKey" = "Enter the key for gladys-api";
 
 /* enabling audio in the application */
 "ParamLabelAudioAppli" = "enabling audio in the application";
@@ -35,8 +35,8 @@
 /* title of the popup to delete conversation */
 "deletePopupTitle" = "Delete conversation";
 
-/* Message from the gladys-ios application */
-"gitIssueMessage" = "(Message from the gladys-ios application";
+/* Message from the -ios application */
+"gitIssueMessage" = "(Message from the -ios application";
 
 /* User in message  */
 "gitIssueUser" = ", and left by the following user: ";
@@ -47,7 +47,7 @@
 /* Conclusion text on the help screen */
 "helpConclusion" = "- Click on the microphone, then save your request.
             - Click again to stop the recording
-            - read / listen to the answer made by gladys. Think beforehand to fill in the parameters.";
+            - read / listen to the answer made by . Think beforehand to fill in the parameters.";
 
 /* Introductory text on the help screen */
 "helpIntroduction" = "For any question, or encouragement, or request of evolution, or bug detected, do not hesitate to contact the author by filling the form below:";
@@ -99,13 +99,13 @@
 
 
 /* Technical error */
-"technicalError" = "Error encountered. \nBefore any use, please check that gladys has been installed on your local network, that you have made the settings in the app, and that you are well connected in wifi to your network.";
+"technicalError" = "Error encountered. \nBefore any use, please check that  has been installed on your local network, that you have made the settings in the app, and that you are well connected in wifi to your network.";
 
 /* APIReponseNotArray */
-"APIReponseNotArray" = "Error encountered with gladys: ";
+"APIReponseNotArray" = "Error encountered with : ";
 
 
 /* APIReponseEmptyArray */
-"APIReponseEmptyArray" = "No information has been returned by gladys";
+"APIReponseEmptyArray" = "No information has been returned by ";
 
 

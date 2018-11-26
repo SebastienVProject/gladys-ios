@@ -1,15 +1,20 @@
 PODS:
-  - Alamofire (4.5.1)
-  - SwiftyPlistManager (1.0.1)
+  - Alamofire (4.8.0)
+  - SwiftyPlistManager (1.0.2)
 
 DEPENDENCIES:
-  - Alamofire
+  - Alamofire (~> 4.5)
   - SwiftyPlistManager
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - SwiftyPlistManager
+
 SPEC CHECKSUMS:
-  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
-  SwiftyPlistManager: 1f4b9e82fd8048fddc16ce56bb574bcfccb21561
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  SwiftyPlistManager: 5895924cccb7fe28deccbe14890e8aed78ae78ae
 
-PODFILE CHECKSUM: a43eb6e24f4616ac527fe9ed5ae05d0888899a04
+PODFILE CHECKSUM: 000b075b407afb02f39a66b6f895f8470a545706
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3

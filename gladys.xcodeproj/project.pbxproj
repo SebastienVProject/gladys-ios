@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		2D03266B1EEEAEB100EFB2E6 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D03266A1EEEAEB100EFB2E6 /* HelpViewController.swift */; };
 		2D235BF61EE4AFFB003F7F1A /* gestionMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D235BF51EE4AFFB003F7F1A /* gestionMessages.swift */; };
-		2D235BFF1EE4B126003F7F1A /* gladys.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D235BF81EE4B126003F7F1A /* gladys.png */; };
-		2D235C001EE4B126003F7F1A /* gladysWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D235BF91EE4B126003F7F1A /* gladysWhite.png */; };
 		2D235C011EE4B126003F7F1A /* iconeOption.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D235BFA1EE4B126003F7F1A /* iconeOption.png */; };
 		2D235C021EE4B126003F7F1A /* blueBulle.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D235BFB1EE4B126003F7F1A /* blueBulle.png */; };
 		2D235C031EE4B126003F7F1A /* whiteBulle.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D235BFC1EE4B126003F7F1A /* whiteBulle.png */; };
@@ -26,16 +24,18 @@
 		2DCB57491EF29FB000D59B08 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2DCB574B1EF29FB000D59B08 /* Localizable.strings */; };
 		2DCB574E1EF29FB100D59B08 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2DCB57501EF29FB100D59B08 /* InfoPlist.strings */; };
 		2DE7DCFE1EEB503F001179A0 /* micro.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE7DCFD1EEB503F001179A0 /* micro.png */; };
-		2DE7DD001EEB5348001179A0 /* microON.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE7DCFF1EEB5348001179A0 /* microON.png */; };
 		AE3FB5B320691036009C2715 /* parametresGit.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE3FB5B220691036009C2715 /* parametresGit.plist */; };
-		DC9FF098A3EE4F552E2E424E /* Pods_gladys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59CFB2BD4C5847A73AA2DF2 /* Pods_gladys.framework */; };
+		AE5F82CD21A9C64A0050758A /* gladys - 48x48.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5F82CC21A9C64A0050758A /* gladys - 48x48.png */; };
+		AE5F82D521A9D08D0050758A /* micro2.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5F82D421A9D08D0050758A /* micro2.png */; };
+		AE5F82D721A9D0A70050758A /* micro2ON.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5F82D621A9D0A70050758A /* micro2ON.png */; };
+		AE71CBFA207183EC0066A786 /* microON.png in Resources */ = {isa = PBXBuildFile; fileRef = AE71CBF9207183EC0066A786 /* microON.png */; };
+		AEF5A64921AB43D20099B545 /* gladys - 48x48v2.png in Resources */ = {isa = PBXBuildFile; fileRef = AEF5A64821AB43D20099B545 /* gladys - 48x48v2.png */; };
+		B2F9B2FF736B986146342257 /* Pods_gladys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7158BB959F4084DB408CA1E1 /* Pods_gladys.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2D03266A1EEEAEB100EFB2E6 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		2D235BF51EE4AFFB003F7F1A /* gestionMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gestionMessages.swift; sourceTree = "<group>"; };
-		2D235BF81EE4B126003F7F1A /* gladys.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gladys.png; sourceTree = "<group>"; };
-		2D235BF91EE4B126003F7F1A /* gladysWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gladysWhite.png; sourceTree = "<group>"; };
 		2D235BFA1EE4B126003F7F1A /* iconeOption.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconeOption.png; sourceTree = "<group>"; };
 		2D235BFB1EE4B126003F7F1A /* blueBulle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueBulle.png; sourceTree = "<group>"; };
 		2D235BFC1EE4B126003F7F1A /* whiteBulle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteBulle.png; sourceTree = "<group>"; };
@@ -43,7 +43,6 @@
 		2D235BFE1EE4B126003F7F1A /* engrenage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = engrenage.png; sourceTree = "<group>"; };
 		2D235C071EE5922C003F7F1A /* parametres.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = parametres.plist; sourceTree = "<group>"; };
 		2D235C091EE5EEA6003F7F1A /* ParametresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParametresViewController.swift; sourceTree = "<group>"; };
-		2D34E2071EE45EA000D84B15 /* gladys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gladys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D34E20A1EE45EA000D84B15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D34E20C1EE45EA000D84B15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2D34E20F1EE45EA000D84B15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,11 +59,16 @@
 		2DCB57541EF2A26200D59B08 /* fr-FR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-FR"; path = "fr-FR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		2DCB57551EF2A26300D59B08 /* fr-FR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-FR"; path = "fr-FR.lproj/Main.strings"; sourceTree = "<group>"; };
 		2DE7DCFD1EEB503F001179A0 /* micro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = micro.png; sourceTree = "<group>"; };
-		2DE7DCFF1EEB5348001179A0 /* microON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = microON.png; sourceTree = "<group>"; };
-		32A2250CBC7A623B983F01CC /* Pods-gladys.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gladys.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gladys/Pods-gladys.debug.xcconfig"; sourceTree = "<group>"; };
-		A70BEB95934136C522FC9698 /* Pods-gladys.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gladys.release.xcconfig"; path = "Pods/Target Support Files/Pods-gladys/Pods-gladys.release.xcconfig"; sourceTree = "<group>"; };
+		320380010D73BD3822CBBC37 /* Pods-gladys.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gladys.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gladys/Pods-gladys.debug.xcconfig"; sourceTree = "<group>"; };
+		7158BB959F4084DB408CA1E1 /* Pods_gladys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gladys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE3FB5B220691036009C2715 /* parametresGit.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = parametresGit.plist; sourceTree = "<group>"; };
-		B59CFB2BD4C5847A73AA2DF2 /* Pods_gladys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gladys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE5F82CC21A9C64A0050758A /* gladys - 48x48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gladys - 48x48.png"; path = "../../../gladys - 48x48.png"; sourceTree = "<group>"; };
+		AE5F82D421A9D08D0050758A /* micro2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = micro2.png; path = ../../../micro2.png; sourceTree = "<group>"; };
+		AE5F82D621A9D0A70050758A /* micro2ON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = micro2ON.png; path = ../../../micro2ON.png; sourceTree = "<group>"; };
+		AE71CBF9207183EC0066A786 /* microON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = microON.png; sourceTree = "<group>"; };
+		AEF5A64521AB07FF0099B545 /* gladys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gladys.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEF5A64821AB43D20099B545 /* gladys - 48x48v2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gladys - 48x48v2.png"; path = "../../../gladys - 48x48v2.png"; sourceTree = "<group>"; };
+		DE1CB1F5E6E45C64E5E49759 /* Pods-gladys.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gladys.release.xcconfig"; path = "Pods/Target Support Files/Pods-gladys/Pods-gladys.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,33 +76,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC9FF098A3EE4F552E2E424E /* Pods_gladys.framework in Frameworks */,
+				B2F9B2FF736B986146342257 /* Pods_gladys.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1989449932B8821AD90C612C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B59CFB2BD4C5847A73AA2DF2 /* Pods_gladys.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		2D235C061EE4B132003F7F1A /* images */ = {
 			isa = PBXGroup;
 			children = (
-				2D235BF81EE4B126003F7F1A /* gladys.png */,
-				2D235BF91EE4B126003F7F1A /* gladysWhite.png */,
+				AE5F82CC21A9C64A0050758A /* gladys - 48x48.png */,
+				AEF5A64821AB43D20099B545 /* gladys - 48x48v2.png */,
 				2D235BFA1EE4B126003F7F1A /* iconeOption.png */,
 				2D235BFB1EE4B126003F7F1A /* blueBulle.png */,
 				2D235BFC1EE4B126003F7F1A /* whiteBulle.png */,
 				2D235BFD1EE4B126003F7F1A /* microphone.png */,
 				2D235BFE1EE4B126003F7F1A /* engrenage.png */,
+				AE5F82D421A9D08D0050758A /* micro2.png */,
+				AE5F82D621A9D0A70050758A /* micro2ON.png */,
 				2DE7DCFD1EEB503F001179A0 /* micro.png */,
-				2DE7DCFF1EEB5348001179A0 /* microON.png */,
+				AE71CBF9207183EC0066A786 /* microON.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -107,18 +105,10 @@
 			isa = PBXGroup;
 			children = (
 				2D34E2091EE45EA000D84B15 /* gladys */,
-				2D34E2081EE45EA000D84B15 /* Products */,
-				D3A53449A3C9A939012A5ECD /* Pods */,
-				1989449932B8821AD90C612C /* Frameworks */,
+				6B0673716297087B8A2BAAC7 /* Pods */,
+				8562F7229137642628523B01 /* Frameworks */,
+				AEF5A64521AB07FF0099B545 /* gladys.app */,
 			);
-			sourceTree = "<group>";
-		};
-		2D34E2081EE45EA000D84B15 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2D34E2071EE45EA000D84B15 /* gladys.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		2D34E2091EE45EA000D84B15 /* gladys */ = {
@@ -143,13 +133,21 @@
 			path = gladys;
 			sourceTree = "<group>";
 		};
-		D3A53449A3C9A939012A5ECD /* Pods */ = {
+		6B0673716297087B8A2BAAC7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				32A2250CBC7A623B983F01CC /* Pods-gladys.debug.xcconfig */,
-				A70BEB95934136C522FC9698 /* Pods-gladys.release.xcconfig */,
+				320380010D73BD3822CBBC37 /* Pods-gladys.debug.xcconfig */,
+				DE1CB1F5E6E45C64E5E49759 /* Pods-gladys.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8562F7229137642628523B01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7158BB959F4084DB408CA1E1 /* Pods_gladys.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,7 +162,6 @@
 				2D34E2041EE45EA000D84B15 /* Frameworks */,
 				2D34E2051EE45EA000D84B15 /* Resources */,
 				C1C81A6CA6CCAF9A6D1C3EE7 /* [CP] Embed Pods Frameworks */,
-				0735785C25BB1D553BF272A9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -172,7 +169,7 @@
 			);
 			name = gladys;
 			productName = gladys;
-			productReference = 2D34E2071EE45EA000D84B15 /* gladys.app */;
+			productReference = AEF5A64521AB07FF0099B545 /* gladys.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -182,12 +179,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = SVInfo;
 				TargetAttributes = {
 					2D34E2061EE45EA000D84B15 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = Q735H4RZJ8;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Siri = {
@@ -206,7 +204,7 @@
 				Base,
 			);
 			mainGroup = 2D34E1FE1EE45EA000D84B15;
-			productRefGroup = 2D34E2081EE45EA000D84B15 /* Products */;
+			productRefGroup = 2D34E1FE1EE45EA000D84B15;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -220,18 +218,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D235BFF1EE4B126003F7F1A /* gladys.png in Resources */,
 				2D235C011EE4B126003F7F1A /* iconeOption.png in Resources */,
+				AE71CBFA207183EC0066A786 /* microON.png in Resources */,
 				2DE7DCFE1EEB503F001179A0 /* micro.png in Resources */,
+				AE5F82CD21A9C64A0050758A /* gladys - 48x48.png in Resources */,
+				AEF5A64921AB43D20099B545 /* gladys - 48x48v2.png in Resources */,
+				AE5F82D521A9D08D0050758A /* micro2.png in Resources */,
+				AE5F82D721A9D0A70050758A /* micro2ON.png in Resources */,
 				2DCB57491EF29FB000D59B08 /* Localizable.strings in Resources */,
 				2DCB574E1EF29FB100D59B08 /* InfoPlist.strings in Resources */,
 				AE3FB5B320691036009C2715 /* parametresGit.plist in Resources */,
 				2D235C0B1EE6004B003F7F1A /* parametres.plist in Resources */,
 				2D34E2151EE45EA000D84B15 /* LaunchScreen.storyboard in Resources */,
 				2D235C041EE4B126003F7F1A /* microphone.png in Resources */,
-				2D235C001EE4B126003F7F1A /* gladysWhite.png in Resources */,
 				2D34E2121EE45EA000D84B15 /* Assets.xcassets in Resources */,
-				2DE7DD001EEB5348001179A0 /* microON.png in Resources */,
 				2D235C021EE4B126003F7F1A /* blueBulle.png in Resources */,
 				2D235C031EE4B126003F7F1A /* whiteBulle.png in Resources */,
 				2D235C051EE4B126003F7F1A /* engrenage.png in Resources */,
@@ -242,21 +242,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0735785C25BB1D553BF272A9 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gladys/Pods-gladys-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9E185D337364EB366175FB92 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -369,6 +354,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -376,6 +362,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -402,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -427,6 +414,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -434,6 +422,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -454,7 +443,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -465,39 +454,43 @@
 		};
 		2D34E21A1EE45EA000D84B15 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32A2250CBC7A623B983F01CC /* Pods-gladys.debug.xcconfig */;
+			baseConfigurationReference = 320380010D73BD3822CBBC37 /* Pods-gladys.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CODE_SIGN_ENTITLEMENTS = gladys/gladys.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sebastien Vergnolle (ESXZGV5H5Z)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q735H4RZJ8;
 				INFOPLIST_FILE = gladys/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.SVInfo.openjarvis;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SVInfo.gladys;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
 		2D34E21B1EE45EA000D84B15 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A70BEB95934136C522FC9698 /* Pods-gladys.release.xcconfig */;
+			baseConfigurationReference = DE1CB1F5E6E45C64E5E49759 /* Pods-gladys.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CODE_SIGN_ENTITLEMENTS = gladys/gladys.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sebastien Vergnolle (ESXZGV5H5Z)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q735H4RZJ8;
 				INFOPLIST_FILE = gladys/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.SVInfo.openjarvis;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SVInfo.gladys;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

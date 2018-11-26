@@ -2,14 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "gladys - 60x60.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "gladys - 180x180.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "gladys - 180x180-1.png",
       "scale" : "3x"
     }
   ],

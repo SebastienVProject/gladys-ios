@@ -22,6 +22,7 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
     static var fontStyleGladys: String!
     static var keyAPIGladys: String?
     static var gitAPIKey: String!
+    var EnregEnCours: Bool! = false
     
     static var heightContainer: Double!
     
@@ -37,7 +38,7 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
     
     var HandleDeleteAllBubble: ((UIAlertAction?) -> Void)!
     
-    let speechRecognizer = SFSpeechRecognizer(locale: Locale.init(identifier: NSLocalizedString("codeLangue", comment: "Language code for speech recognizer")))!
+    let speechRecognizer = SFSpeechRecognizer(locale: Locale.init(identifier: NSLocalizedString("fr-FR", comment: "Language code for speech recognizer")))!
     
     var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
     var recognitionTask: SFSpeechRecognitionTask?
@@ -48,7 +49,6 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        labelMenuHelp.title = NSLocalizedString("labelMenuHelp", comment: "Help label")
         labelMenuParameter.title = NSLocalizedString("labelMenuParameter", comment: "Parameter label")
         
         microphoneButton.isEnabled = false
@@ -84,42 +84,42 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
         //on recupere les parametres de l'applicatif
         SwiftyPlistManager.shared.getValue(for: "urlGladys", fromPlistWithName: "parametres") { (result, err) in
             if err == nil {
-                ViewController.urlgladys = result as! String
+                ViewController.urlgladys = result as? String
             }
         }
         SwiftyPlistManager.shared.getValue(for: "portGladys", fromPlistWithName: "parametres") { (result, err) in
             if err == nil {
-                ViewController.portgladys = result as! String
+                ViewController.portgladys = result as? String
             }
         }
         SwiftyPlistManager.shared.getValue(for: "audioApplication", fromPlistWithName: "parametres") { (result, err) in
             if err == nil {
-                ViewController.audioApplication = result as! Bool
+                ViewController.audioApplication = result as? Bool
             }
         }
         SwiftyPlistManager.shared.getValue(for: "audioServeur", fromPlistWithName: "parametres") { (result, err) in
             if err == nil {
-                ViewController.audioServeur = result as! Bool
+                ViewController.audioServeur = result as? Bool
             }
         }
         SwiftyPlistManager.shared.getValue(for: "fontSize", fromPlistWithName: "parametres") { (result, err) in
             if err == nil {
-                ViewController.fontSize = result as! Int
+                ViewController.fontSize = result as? Int
             }
         }
         SwiftyPlistManager.shared.getValue(for: "fontSizeGladys", fromPlistWithName: "parametres") { (result, err) in
             if err == nil {
-                ViewController.fontSizeGladys = result as! Int
+                ViewController.fontSizeGladys = result as? Int
             }
         }
         SwiftyPlistManager.shared.getValue(for: "fontStyle", fromPlistWithName: "parametres") { (result, err) in
             if err == nil {
-                ViewController.fontStyle = result as! String
+                ViewController.fontStyle = result as? String
             }
         }
         SwiftyPlistManager.shared.getValue(for: "fontStyleGladys", fromPlistWithName: "parametres") { (result, err) in
             if err == nil {
-                ViewController.fontStyleGladys = result as! String
+                ViewController.fontStyleGladys = result as? String
             }
         }
         SwiftyPlistManager.shared.getValue(for: "keyApiGladys", fromPlistWithName: "parametres") { (result, err) in
@@ -153,25 +153,36 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
         }
     }
     
-    func handleLongPress(_ gesture: UILongPressGestureRecognizer){
+    @objc func handleLongPress(_ gesture: UILongPressGestureRecognizer){
         if gesture.state != .began { return }
-        let alert = UIAlertController(title: NSLocalizedString("deletePopupTitle", comment: "title of the popup to delete conversation"), message: NSLocalizedString("deletePopupMessage", comment: "message of the popup to delete conversation"), preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: NSLocalizedString("actionDelete", comment: "Delete action"), style: UIAlertActionStyle.destructive, handler: HandleDeleteAllBubble))
-        alert.addAction(UIAlertAction(title: NSLocalizedString("actionCancel", comment: "Cancel action"), style: UIAlertActionStyle.cancel, handler: nil))
+        let alert = UIAlertController(title: NSLocalizedString("deletePopupTitle", comment: "title of the popup to delete conversation"), message: NSLocalizedString("deletePopupMessage", comment: "message of the popup to delete conversation"), preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("actionDelete", comment: "Delete action"), style: UIAlertAction.Style.destructive, handler: HandleDeleteAllBubble))
+        alert.addAction(UIAlertAction(title: NSLocalizedString("actionCancel", comment: "Cancel action"), style: UIAlertAction.Style.cancel, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
 
     @IBAction func microphoneTapped(_ sender: AnyObject) {
-        if audioEngine.isRunning {
+        ClicMicrophone()
+    }
+    
+    func ClicMicrophone() {
+        if EnregEnCours == true {
+            microphoneButton.setTitle("Start Recording", for: .normal)
+            microphoneButton.setImage(UIImage(named: "micro2.png"), for: .normal)
+            print("3" + String(audioEngine.isRunning))
             audioEngine.stop()
+            print("4" + String(audioEngine.isRunning))
+            audioEngine.inputNode.removeTap(onBus: 0)
             recognitionRequest?.endAudio()
             microphoneButton.isEnabled = false
-            microphoneButton.setTitle("Start Recording", for: .normal)
-            microphoneButton.setImage(UIImage(named: "micro.png"), for: .normal)
+            EnregEnCours = false
         } else {
-            startRecording()
             microphoneButton.setTitle("Stop Recording", for: .normal)
-            microphoneButton.setImage(UIImage(named: "microON.png"), for: .normal)
+            microphoneButton.setImage(UIImage(named: "micro2ON.png"), for: .normal)
+            print("1" + String(audioEngine.isRunning))
+            startRecording()
+            print("2" + String(audioEngine.isRunning))
+            EnregEnCours = true
         }
     }
     
@@ -181,19 +192,24 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
             recognitionTask?.cancel()
             recognitionTask = nil
         }
+        self.recognitionRequest = nil
+        self.recognitionTask = nil
         
         let audioSession = AVAudioSession.sharedInstance()
         do {
-            try audioSession.setCategory(AVAudioSessionCategoryPlayAndRecord)
-            try audioSession.setMode(AVAudioSessionModeMeasurement)
-            try audioSession.setActive(true, with: .notifyOthersOnDeactivation)
+            //try audioSession.setCategory(AVAudioSessionCategoryPlayAndRecord)
+            try audioSession.setCategory(.playAndRecord, mode: .default, options: [ .defaultToSpeaker ])
+            //try audioSession.setMode(AVAudioSession.Mode.measurement)
+            try audioSession.setActive(true, options: .notifyOthersOnDeactivation)
+            // Define the recorder setting
         } catch {
             print("audioSession properties weren't set because of an error.")
         }
-        
+        print(2.1)
         recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
-        
-        guard let inputNode = audioEngine.inputNode else {
+        print(2.2)
+        let audioEngineInputNode: AVAudioInputNode? = audioEngine.inputNode
+        guard let inputNode = audioEngineInputNode else {
             fatalError("Audio engine has no input node")
         }
         
@@ -202,20 +218,24 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
         }
         
         recognitionRequest.shouldReportPartialResults = true
-        
+        print(2.3)
         recognitionTask = speechRecognizer.recognitionTask(with: recognitionRequest, resultHandler: { (result, error) in
-            
+        print(2.8)
             var isFinal = false
-            
+            print(2.9)
+            //print(result.debugDescription)
             if result != nil {
                 
                 self.textView.text = result?.bestTranscription.formattedString
                 //self.whatIwant = result?.bestTranscription.formattedString
                 isFinal = (result?.isFinal)!
             }
-            
+            print("2.10")
+//print (error.debugDescription + " / " + String(isFinal))
             if error != nil || isFinal {
+                print(2.11)
                 self.audioEngine.stop()
+                print(2.12)
                 inputNode.removeTap(onBus: 0)
                 
                 self.recognitionRequest = nil
@@ -225,22 +245,24 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
                 TraiterDemande(bulleText: self.textView.text, containerVue: self.containerView, scrollVue: self.scrollVue, messageVue: self.MessageVue)
             }
         })
-        
+        print(2.4)
         let recordingFormat = inputNode.outputFormat(forBus: 0)
         inputNode.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { (buffer, when) in
             self.recognitionRequest?.append(buffer)
         }
-        
+        print(2.5)
         audioEngine.prepare()
+        print(2.6)
         
         do {
+            print("2.7.1" + String(audioEngine.isRunning))
             try audioEngine.start()
+            print("2.7.2" + String(audioEngine.isRunning))
         } catch {
             print("audioEngine couldn't start because of an error.")
         }
         
         textView.text = ""
-        
     }
     
     func speechRecognizer(_ speechRecognizer: SFSpeechRecognizer, availabilityDidChange available: Bool) {
@@ -253,3 +275,8 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
 }
 
 
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromAVAudioSessionCategory(_ input: AVAudioSession.Category) -> String {
+	return input.rawValue
+}

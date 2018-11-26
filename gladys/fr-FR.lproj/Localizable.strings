@@ -5,7 +5,7 @@
 "ParamFontGladys" = "Taille police Gladys";
 
 /* Enter API Key for Gladys */
-"ParamLabelAPIKey" = "Clé de sécurité gladys-api (facultatif)";
+"ParamLabelAPIKey" = "Clé de sécurité gladys-api";
 
 /* enabling audio in the application */
 "ParamLabelAudioAppli" = "activer l'audio dans l'application";

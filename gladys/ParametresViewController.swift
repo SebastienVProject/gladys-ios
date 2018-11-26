@@ -55,7 +55,7 @@ class ParametresViewController: UIViewController, UITextFieldDelegate {
         labelFont.text = NSLocalizedString("ParamFont", comment: "font size in the bubble")
         labelFontGladys.text = NSLocalizedString("ParamFontGladys", comment: "font size in the gladys bubble")
         
-        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.dark)
+        let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.dark)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
         blurEffectView.frame = GlobalView.bounds
         imageGladysParam.addSubview(blurEffectView)

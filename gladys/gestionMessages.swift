@@ -91,9 +91,29 @@ public func TraiterDemande(bulleText: String, containerVue: UIView, scrollVue: U
 }
 
 public func ReponseAudioDevice(reponse: String){
+ 
+    let audioSession = AVAudioSession.sharedInstance()
+    do {
+        try! audioSession.setCategory(.playAndRecord, mode: .spokenAudio, options: [ .defaultToSpeaker ])
+        
+        try audioSession.setActive(true, options: .notifyOthersOnDeactivation)
+        
+        let currentRoute = AVAudioSession.sharedInstance().currentRoute
+        for description in currentRoute.outputs {
+            if convertFromAVAudioSessionPort(description.portType) == convertFromAVAudioSessionPort(AVAudioSession.Port.headphones) {
+                try audioSession.overrideOutputAudioPort(AVAudioSession.PortOverride.none)
+                print("headphone plugged in")
+            } else {
+                print("headphone pulled out")
+                try audioSession.overrideOutputAudioPort(AVAudioSession.PortOverride.speaker)
+            }
+        }
+    } catch {
+        print("audioSession properties weren't set because of an error.")
+    }
     
     let speechUtterance = AVSpeechUtterance(string: reponse)
-    speechUtterance.voice=AVSpeechSynthesisVoice(language: NSLocalizedString("codeLangue", comment: "code langue"))
+    speechUtterance.voice=AVSpeechSynthesisVoice(language: NSLocalizedString("fr-FR", comment: "FR"))
     //speechUtterance.volume = 10
     speechSynthesizer.speak(speechUtterance)
 }
@@ -133,7 +153,7 @@ public func AjouterBulle(gladys: Bool, bulleText: String, containerVue: UIView, 
     
     //gestion de l'avatar
     if gladys {
-        imageGladys = UIImageView(image: UIImage(named: "gladysWhite.png"))
+        imageGladys = UIImageView(image: UIImage(named: "gladys - 48x48v2.png"))
         imageGladys.frame = CGRect(x: 3, y: positionBulleSuivante, width: 47, height: 48)
         //self.view.addSubview
         containerVue.addSubview(imageGladys)
@@ -151,15 +171,15 @@ public func AjouterBulle(gladys: Bool, bulleText: String, containerVue: UIView, 
     var policeSizeBulle : Int
     var couleurTexte : UIColor
     if gladys {
-        couleurBulle = UIColor.white
+        couleurBulle = UIColor(red: 0/255, green: 82/255, blue: 212/255, alpha: 1)
         policeBulle = bulleFontNameGladys!
         policeSizeBulle = bulleFontSizeGladys!
-        couleurTexte = UIColor(red: 241/255, green: 23/255, blue: 193/255, alpha: 1)
+        couleurTexte = UIColor.white
     } else {
-        couleurBulle = UIColor(red: 1/255, green: 144/255, blue: 146/255, alpha: 1)
+        couleurBulle = UIColor(red: 101/255, green: 199/255, blue: 247/255, alpha: 1)
         policeBulle = bulleFontName!
         policeSizeBulle = bulleFontSize!
-        couleurTexte = UIColor.white
+        couleurTexte = UIColor(red: 22/255, green: 25/255, blue: 59/255, alpha: 1)
     }
     bulle = UITextView()
     bulle.backgroundColor = couleurBulle
@@ -195,4 +215,14 @@ public func AjouterBulle(gladys: Bool, bulleText: String, containerVue: UIView, 
         let scrollPoint = CGPoint(x: 0, y: ecartY+40)
         scrollVue.setContentOffset(scrollPoint, animated: false)//Set false if you doesn't want animation
     }
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromAVAudioSessionCategory(_ input: AVAudioSession.Category) -> String {
+	return input.rawValue
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromAVAudioSessionPort(_ input: AVAudioSession.Port) -> String {
+	return input.rawValue
 }

@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '10.0'
+# platform :ios, '9.0'
 
 target 'gladys' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
@@ -7,5 +7,5 @@ target 'gladys' do
 
   # Pods for gladys
   pod 'SwiftyPlistManager'
-  pod 'Alamofire'
+  pod 'Alamofire', '~> 4.5'
 end

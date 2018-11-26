@@ -32,7 +32,7 @@ class HelpViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NotificationCenter.default.addObserver(self, selector: #selector(HelpViewController.rotated), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(HelpViewController.rotated), name: UIDevice.orientationDidChangeNotification, object: nil)
         
         textHelpIntroduction.text = NSLocalizedString("helpIntroduction", comment: "Introductory text on the help screen")
         labelEmail.text = NSLocalizedString("helpLabelEmail", comment: "your email")
@@ -46,7 +46,7 @@ class HelpViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         
         pickerText = pickerDataSource[0]
 
-        let blurEffectView = UIVisualEffectView(effect: UIBlurEffect(style: UIBlurEffectStyle.dark))
+        let blurEffectView = UIVisualEffectView(effect: UIBlurEffect(style: UIBlurEffect.Style.dark))
         blurEffectView.frame = globalView.bounds
         imageGladysHelp.addSubview(blurEffectView)
         
@@ -60,9 +60,9 @@ class HelpViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         NotificationCenter.default.removeObserver(self)
     }
     
-    func rotated() {
+    @objc func rotated() {
         imageGladysHelp.subviews.first?.removeFromSuperview()
-        let blurEffectView = UIVisualEffectView(effect: UIBlurEffect(style: UIBlurEffectStyle.dark))
+        let blurEffectView = UIVisualEffectView(effect: UIBlurEffect(style: UIBlurEffect.Style.dark))
         blurEffectView.frame = globalView.bounds
         imageGladysHelp.addSubview(blurEffectView)
         
@@ -73,7 +73,7 @@ class HelpViewController: UIViewController, UIPickerViewDataSource, UIPickerView
 //        }
     }
     
-    func dismissKeyboard() {
+    @objc func dismissKeyboard() {
         view.endEditing(true)
     }
     
@@ -153,13 +153,13 @@ class HelpViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         }
         else {
             if !emailOK {
-                let alert = UIAlertController(title: NSLocalizedString("popupEmailKOTitle", comment: "Thank you for entering a valide email Title"), message: NSLocalizedString("popupEmailKOMessage", comment: "Thank you for entering a valide email Message"), preferredStyle: UIAlertControllerStyle.alert)
-                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                let alert = UIAlertController(title: NSLocalizedString("popupEmailKOTitle", comment: "Thank you for entering a valide email Title"), message: NSLocalizedString("popupEmailKOMessage", comment: "Thank you for entering a valide email Message"), preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
             }
             else {
-                let alert = UIAlertController(title: NSLocalizedString("popupMessageKOTitle", comment: "Enter a message"), message: NSLocalizedString("popupMessageKOMessage", comment: "Thank you for entering a message"), preferredStyle: UIAlertControllerStyle.alert)
-                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                let alert = UIAlertController(title: NSLocalizedString("popupMessageKOTitle", comment: "Enter a message"), message: NSLocalizedString("popupMessageKOMessage", comment: "Thank you for entering a message"), preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
             }
         }
@@ -182,8 +182,8 @@ class HelpViewController: UIViewController, UIPickerViewDataSource, UIPickerView
             case .success:
                 self.textFieldEmail.text=""
                 self.textViewMessage.text=""
-                let alert = UIAlertController(title: NSLocalizedString("popupSentMessageTitle", comment: "Sent message"), message: NSLocalizedString("popupSentMessageMessage", comment: "message sent successfully"), preferredStyle: UIAlertControllerStyle.alert)
-                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                let alert = UIAlertController(title: NSLocalizedString("popupSentMessageTitle", comment: "Sent message"), message: NSLocalizedString("popupSentMessageMessage", comment: "message sent successfully"), preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
                 break
             case .failure(let error):

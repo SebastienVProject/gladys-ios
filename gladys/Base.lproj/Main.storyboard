@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Tq7-xS-b4U">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Tq7-xS-b4U">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="AvenirNext.ttc">
-            <string>AvenirNext-Regular</string>
-        </array>
-        <array key="Papyrus.ttc">
-            <string>Papyrus</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--gladys-->
         <scene sceneID="tne-QT-ifu">
@@ -31,8 +22,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="This is the UITextView" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mmy-d9-woF">
-                                <rect key="frame" x="16" y="587" width="343" height="0.0"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="16" y="577" width="343" height="0.0"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" id="xW0-Gk-u2K"/>
                                 </constraints>
@@ -40,7 +31,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FGz-0v-Kyy">
-                                <rect key="frame" x="0.0" y="64" width="375" height="523"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="513"/>
                                 <subviews>
                                     <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yL2-dH-4eS" userLabel="containerView">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
@@ -50,7 +41,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="yL2-dH-4eS" firstAttribute="top" secondItem="FGz-0v-Kyy" secondAttribute="top" id="Mwc-iO-SDf"/>
                                     <constraint firstAttribute="trailing" secondItem="yL2-dH-4eS" secondAttribute="trailing" id="OQH-w8-oQC"/>
@@ -59,23 +50,25 @@
                                     <constraint firstAttribute="bottom" secondItem="yL2-dH-4eS" secondAttribute="bottom" constant="415" id="pCo-dx-Pam"/>
                                 </constraints>
                             </scrollView>
-                            <imageView userInteractionEnabled="NO" alpha="0.050000000000000003" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jarvisIcon" highlightedImage="jarvisIcon" translatesAutoresizingMaskIntoConstraints="NO" id="6v0-e6-kNf">
-                                <rect key="frame" x="0.0" y="64" width="375" height="523"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gladysIcon" highlightedImage="gladysIcon" translatesAutoresizingMaskIntoConstraints="NO" id="6v0-e6-kNf">
+                                <rect key="frame" x="0.0" y="64" width="375" height="513"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhn-aK-v7w">
-                                <rect key="frame" x="175" y="607" width="25" height="50"/>
+                                <rect key="frame" x="157.5" y="597" width="60" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="25" id="QL9-pJ-AyS"/>
-                                    <constraint firstAttribute="height" constant="50" id="e6A-eT-ibl"/>
+                                    <constraint firstAttribute="width" constant="60" id="QL9-pJ-AyS"/>
+                                    <constraint firstAttribute="height" constant="60" id="e6A-eT-ibl"/>
                                 </constraints>
-                                <state key="normal" image="micro.png"/>
+                                <state key="normal" image="micro2.png"/>
                                 <connections>
                                     <action selector="microphoneTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zpa-3a-mqi"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="FGz-0v-Kyy" secondAttribute="trailing" id="24K-0l-8lh"/>
                             <constraint firstItem="FGz-0v-Kyy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="411-xN-Pmt"/>
@@ -94,15 +87,8 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="gladys" id="kuk-be-FIe">
-                        <barButtonItem key="leftBarButtonItem" title="help" id="620-bX-HHy">
-                            <color key="tintColor" red="1" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="helpTapped:" destination="BYZ-38-t0r" id="Wlj-Ym-d7x"/>
-                                <segue destination="ccv-BX-iZq" kind="show" id="Swk-EM-WG9"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="paramètres" id="Ago-0t-h8j">
-                            <color key="tintColor" red="1" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.61176470588235299" green="0.92549019607843142" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="Gen-Ns-wrN" kind="show" id="ij9-8A-yAy"/>
                             </connections>
@@ -112,7 +98,6 @@
                         <outlet property="MessageVue" destination="8bC-Xf-vdC" id="vS4-z3-Cfq"/>
                         <outlet property="containerView" destination="yL2-dH-4eS" id="4Ag-99-erL"/>
                         <outlet property="imageGladys" destination="6v0-e6-kNf" id="cpH-II-KVn"/>
-                        <outlet property="labelMenuHelp" destination="620-bX-HHy" id="h1O-It-drd"/>
                         <outlet property="labelMenuParameter" destination="Ago-0t-h8j" id="sSH-16-v21"/>
                         <outlet property="microphoneButton" destination="xhn-aK-v7w" id="VF7-co-9bz"/>
                         <outlet property="scrollVue" destination="FGz-0v-Kyy" id="EUN-cK-9Cg"/>
@@ -122,167 +107,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1056.8" y="122.78860569715144"/>
-        </scene>
-        <!--HelpView Controller-->
-        <scene sceneID="10o-QL-69a">
-            <objects>
-                <viewController id="ccv-BX-iZq" userLabel="HelpView Controller" customClass="HelpViewController" customModule="gladys" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="M9A-zY-UXh"/>
-                        <viewControllerLayoutGuide type="bottom" id="Mrc-cF-mGp"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Fxv-Fh-ngE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jarvisIcon" highlightedImage="jarvisIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Hzd-YK-v0a" userLabel="jarvisIconHelp">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="AL1-FI-bwh">
-                                <rect key="frame" x="0.0" y="83" width="375" height="502.5"/>
-                                <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kse-Ok-cH0">
-                                        <rect key="frame" x="0.0" y="0.0" width="365" height="133.5"/>
-                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <string key="text">Pour toute question, ou encouragement, ou demande d'évolution, ou bug détecté, n'hésitez pas à contacter l'auteur en remplissant le formulaire ci-dessous:</string>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="19"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        <variation key="heightClass=regular-widthClass=regular">
-                                            <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="25"/>
-                                        </variation>
-                                    </textView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ePq-mh-5Zf">
-                                        <rect key="frame" x="0.0" y="143.5" width="365" height="58"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Votre email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFE-AC-qVR">
-                                                <rect key="frame" x="0.0" y="0.0" width="365" height="28"/>
-                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="18"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                                <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="25"/>
-                                                </variation>
-                                            </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QIF-wv-1YG">
-                                                <rect key="frame" x="0.0" y="28" width="365" height="30"/>
-                                                <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="16"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
-                                                <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="23"/>
-                                                </variation>
-                                                <connections>
-                                                    <outlet property="delegate" destination="ccv-BX-iZq" id="zDF-tL-YhR"/>
-                                                </connections>
-                                            </textField>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bra-z6-ZHQ">
-                                        <rect key="frame" x="0.0" y="211.5" width="365" height="103"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type de message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mp3-dJ-cvT">
-                                                <rect key="frame" x="0.0" y="0.0" width="365" height="28"/>
-                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="18"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                                <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="25"/>
-                                                </variation>
-                                            </label>
-                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dP3-XM-jhx">
-                                                <rect key="frame" x="0.0" y="28" width="365" height="75"/>
-                                                <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="75" id="Tno-Uo-leV"/>
-                                                </constraints>
-                                                <connections>
-                                                    <outlet property="dataSource" destination="Hzd-YK-v0a" id="a0e-Jf-mE4"/>
-                                                </connections>
-                                            </pickerView>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="C1t-cd-lJ4">
-                                        <rect key="frame" x="0.0" y="324.5" width="365" height="128"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Votre message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1h-Pe-JzK">
-                                                <rect key="frame" x="0.0" y="0.0" width="365" height="28"/>
-                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="18"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                                <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="25"/>
-                                                </variation>
-                                            </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kZr-gy-icr">
-                                                <rect key="frame" x="0.0" y="28" width="365" height="100"/>
-                                                <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="100" id="wuB-X8-Xfe"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="25"/>
-                                                </variation>
-                                            </textView>
-                                        </subviews>
-                                    </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kxi-HZ-ksJ">
-                                        <rect key="frame" x="0.0" y="462.5" width="375" height="40"/>
-                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="18"/>
-                                        <state key="normal" title="Envoyez votre message">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <variation key="heightClass=regular-widthClass=regular">
-                                            <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="25"/>
-                                        </variation>
-                                        <connections>
-                                            <action selector="ValidationFormulaire:" destination="ccv-BX-iZq" eventType="touchUpInside" id="VI3-QL-H7R"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="ePq-mh-5Zf" secondAttribute="trailing" constant="10" id="3ZB-Z1-bTT"/>
-                                    <constraint firstAttribute="trailing" secondItem="C1t-cd-lJ4" secondAttribute="trailing" constant="10" id="4su-8P-3In"/>
-                                    <constraint firstAttribute="trailing" secondItem="bra-z6-ZHQ" secondAttribute="trailing" constant="10" id="67h-m3-C9P"/>
-                                    <constraint firstAttribute="trailing" secondItem="ePq-mh-5Zf" secondAttribute="trailing" constant="10" id="MbS-XV-6FZ"/>
-                                    <constraint firstItem="ePq-mh-5Zf" firstAttribute="top" secondItem="Kse-Ok-cH0" secondAttribute="bottom" constant="10" id="knN-aW-1ME"/>
-                                    <constraint firstAttribute="trailing" secondItem="Kse-Ok-cH0" secondAttribute="trailing" constant="10" id="tVf-rN-bv6"/>
-                                    <constraint firstItem="ePq-mh-5Zf" firstAttribute="top" secondItem="Kse-Ok-cH0" secondAttribute="bottom" constant="10" id="uIn-FA-hta"/>
-                                    <constraint firstItem="Kxi-HZ-ksJ" firstAttribute="centerX" secondItem="AL1-FI-bwh" secondAttribute="centerX" id="wmr-8d-zRH"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="AL1-FI-bwh" firstAttribute="centerX" secondItem="Fxv-Fh-ngE" secondAttribute="centerX" id="4tY-bC-rwB"/>
-                            <constraint firstItem="Hzd-YK-v0a" firstAttribute="height" secondItem="Fxv-Fh-ngE" secondAttribute="height" id="AME-ev-CfY"/>
-                            <constraint firstItem="Hzd-YK-v0a" firstAttribute="centerY" secondItem="Fxv-Fh-ngE" secondAttribute="centerY" id="DDr-il-6db"/>
-                            <constraint firstItem="AL1-FI-bwh" firstAttribute="width" secondItem="Fxv-Fh-ngE" secondAttribute="width" id="DfF-Lc-h2o"/>
-                            <constraint firstItem="AL1-FI-bwh" firstAttribute="width" secondItem="Fxv-Fh-ngE" secondAttribute="width" id="OjD-7g-SEt"/>
-                            <constraint firstItem="Hzd-YK-v0a" firstAttribute="centerX" secondItem="Fxv-Fh-ngE" secondAttribute="centerX" id="Qj9-vY-4GZ"/>
-                            <constraint firstItem="Hzd-YK-v0a" firstAttribute="width" secondItem="Fxv-Fh-ngE" secondAttribute="width" id="RZA-n6-2WW"/>
-                            <constraint firstItem="AL1-FI-bwh" firstAttribute="centerY" secondItem="Fxv-Fh-ngE" secondAttribute="centerY" id="epB-8d-9VB"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="globalView" destination="Fxv-Fh-ngE" id="rYl-b4-xdv"/>
-                        <outlet property="imageGladysHelp" destination="Hzd-YK-v0a" id="1fn-mx-FRf"/>
-                        <outlet property="labelButtonSent" destination="Kxi-HZ-ksJ" id="iDL-GH-HXW"/>
-                        <outlet property="labelEmail" destination="tFE-AC-qVR" id="1hf-00-RO4"/>
-                        <outlet property="labelMessage" destination="c1h-Pe-JzK" id="hQ2-ge-yRc"/>
-                        <outlet property="labelType" destination="Mp3-dJ-cvT" id="Ptq-4t-jEl"/>
-                        <outlet property="pickerViewType" destination="dP3-XM-jhx" id="mpi-um-mWU"/>
-                        <outlet property="textFieldEmail" destination="QIF-wv-1YG" id="Bz4-HH-cBx"/>
-                        <outlet property="textHelpIntroduction" destination="Kse-Ok-cH0" id="ghK-Mv-V3e"/>
-                        <outlet property="textViewMessage" destination="kZr-gy-icr" id="jqf-po-HSa"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vNL-QJ-qak" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1804" y="-584.25787106446785"/>
         </scene>
         <!--Parametres View Controller-->
         <scene sceneID="iu1-Dx-RRb">
@@ -296,7 +120,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jarvisIcon" highlightedImage="jarvisIcon" translatesAutoresizingMaskIntoConstraints="NO" id="pR8-5P-HQ1" userLabel="Image Jarvis">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gladysIcon" highlightedImage="gladysIcon" translatesAutoresizingMaskIntoConstraints="NO" id="pR8-5P-HQ1" userLabel="Image Jarvis">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="tintColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
@@ -304,24 +128,24 @@
                                 <rect key="frame" x="26" y="114" width="323" height="503"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="ILx-93-s8G">
-                                        <rect key="frame" x="0.0" y="0.0" width="316" height="56.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="308" height="48.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entrez l'URL ou l'IP de votre serveur jarvis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="paB-0a-2t8">
-                                                <rect key="frame" x="0.0" y="0.0" width="316" height="26.5"/>
-                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entrez l'URL ou l'IP de votre serveur gladys" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="paB-0a-2t8">
+                                                <rect key="frame" x="0.0" y="0.0" width="308" height="18.5"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="25"/>
+                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
                                                 </variation>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="http://0.0.0.0 ou http://jarvis.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P0t-wf-3ou">
-                                                <rect key="frame" x="0.0" y="26.5" width="316" height="30"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="http://0.0.0.0 ou http://gladys.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P0t-wf-3ou">
+                                                <rect key="frame" x="0.0" y="18.5" width="308" height="30"/>
                                                 <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="24"/>
+                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
                                                 </variation>
                                                 <connections>
                                                     <action selector="updateUrlGladys:" destination="Gen-Ns-wrN" eventType="editingDidEnd" id="gle-X6-72i"/>
@@ -333,19 +157,19 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="zVN-4F-l8M">
-                                        <rect key="frame" x="0.0" y="76" width="262" height="57.5"/>
+                                        <rect key="frame" x="0.0" y="77" width="253.5" height="49.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entrez le numéro du port jarvis-api" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90f-Vt-M8P">
-                                                <rect key="frame" x="0.0" y="0.0" width="262" height="26.5"/>
-                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entrez le numéro du port gladys-api" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90f-Vt-M8P">
+                                                <rect key="frame" x="0.0" y="0.0" width="253.5" height="18.5"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="25"/>
+                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
                                                 </variation>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="8080" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yb2-VS-qam">
-                                                <rect key="frame" x="0.0" y="26.5" width="60.5" height="31"/>
+                                                <rect key="frame" x="0.0" y="18.5" width="60.5" height="31"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -359,11 +183,11 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="nmf-XH-tnl">
-                                        <rect key="frame" x="0.0" y="152" width="275.5" height="59"/>
+                                        <rect key="frame" x="0.0" y="155" width="253.5" height="48.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entrez la clé définie pour jarvis-api" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SiT-Au-FwT">
-                                                <rect key="frame" x="0.0" y="0.0" width="275.5" height="28"/>
-                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="18"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entrez la clé définie pour gladys-api" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SiT-Au-FwT">
+                                                <rect key="frame" x="0.0" y="0.0" width="253.5" height="18.5"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="heightClass=regular-widthClass=regular">
@@ -371,12 +195,12 @@
                                                 </variation>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="facultatif" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vKa-mS-jIs">
-                                                <rect key="frame" x="0.0" y="28" width="275.5" height="31"/>
+                                                <rect key="frame" x="0.0" y="18.5" width="253.5" height="30"/>
                                                 <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                 <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="24"/>
+                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
                                                 </variation>
                                                 <connections>
                                                     <action selector="updateKeyApiGladys:" destination="Gen-Ns-wrN" eventType="editingDidEnd" id="mFA-FM-Ccm"/>
@@ -388,18 +212,18 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleAspectFill" semanticContentAttribute="spatial" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="81e-JV-7uK">
-                                        <rect key="frame" x="0.0" y="243" width="323" height="31"/>
+                                        <rect key="frame" x="0.0" y="241" width="323" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="activation audio serveur" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Jg-z2-1jd">
-                                                <rect key="frame" x="0.0" y="1.5" width="274" height="28"/>
-                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="18"/>
+                                                <rect key="frame" x="0.0" y="6" width="274" height="18.5"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="25"/>
+                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
                                                 </variation>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fh8-3S-me7">
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fh8-3S-me7">
                                                 <rect key="frame" x="274" y="0.0" width="51" height="31"/>
                                                 <connections>
                                                     <action selector="updateAudioServeur:" destination="Gen-Ns-wrN" eventType="valueChanged" id="VX3-Sa-UNG"/>
@@ -408,18 +232,18 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0SD-Cn-yNl">
-                                        <rect key="frame" x="0.0" y="319.5" width="323" height="31"/>
+                                        <rect key="frame" x="0.0" y="318.5" width="323" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="activation audio application" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsf-ot-Wf3">
                                                 <rect key="frame" x="0.0" y="0.0" width="274" height="31"/>
-                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="25"/>
+                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
                                                 </variation>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WSl-o3-j29">
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WSl-o3-j29">
                                                 <rect key="frame" x="274" y="0.0" width="51" height="31"/>
                                                 <connections>
                                                     <action selector="updateAudioApplication:" destination="Gen-Ns-wrN" eventType="valueChanged" id="nuZ-j2-1Gl"/>
@@ -428,15 +252,15 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="oVX-8c-lxI" userLabel="Stack View police bulle">
-                                        <rect key="frame" x="0.0" y="397.5" width="323" height="29"/>
+                                        <rect key="frame" x="0.0" y="396.5" width="323" height="29"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="taille police bulle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sy-rz-2um" userLabel="libelle">
-                                                <rect key="frame" x="0.0" y="0.0" width="132.5" height="29"/>
-                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="18"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="117.5" height="29"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="25"/>
+                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
                                                 </variation>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AdM-sO-dEj">
@@ -454,7 +278,7 @@
                                                     </textField>
                                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minimumValue="10" maximumValue="36" translatesAutoresizingMaskIntoConstraints="NO" id="WUM-Pn-6sS">
                                                         <rect key="frame" x="41" y="0.0" width="94" height="29"/>
-                                                        <color key="tintColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="tintColor" red="0.98958333333333337" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <connections>
                                                             <action selector="updateFontSizeBubble:" destination="Gen-Ns-wrN" eventType="valueChanged" id="e2O-ee-fXm"/>
                                                         </connections>
@@ -463,23 +287,23 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="q5v-5s-2Xi" userLabel="Stack View police jarvis">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="q5v-5s-2Xi" userLabel="Stack View police gladys">
                                         <rect key="frame" x="0.0" y="474" width="323" height="29"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="taille police jarvis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jW1-LU-4am" userLabel="libelle">
-                                                <rect key="frame" x="0.0" y="0.0" width="135" height="29"/>
-                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="18"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="taille police Gladys" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jW1-LU-4am" userLabel="libelle">
+                                                <rect key="frame" x="0.0" y="0.0" width="133.5" height="29"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="25"/>
+                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
                                                 </variation>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gTJ-lz-7Lj">
-                                                <rect key="frame" x="186" y="0.0" width="137" height="29"/>
+                                                <rect key="frame" x="185" y="0.0" width="138" height="29"/>
                                                 <subviews>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="12" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5zV-oD-E5X" userLabel="taille police">
-                                                        <rect key="frame" x="0.0" y="0.0" width="43" height="29"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="44" height="29"/>
                                                         <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
@@ -489,8 +313,8 @@
                                                         </variation>
                                                     </textField>
                                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minimumValue="10" maximumValue="36" translatesAutoresizingMaskIntoConstraints="NO" id="mYR-gz-OLC">
-                                                        <rect key="frame" x="43" y="0.0" width="94" height="29"/>
-                                                        <color key="tintColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <rect key="frame" x="44" y="0.0" width="94" height="29"/>
+                                                        <color key="tintColor" red="0.98958333333333337" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <connections>
                                                             <action selector="updateFontSizeBubbleGladys:" destination="Gen-Ns-wrN" eventType="valueChanged" id="RcK-4f-Kne"/>
                                                         </connections>
@@ -530,7 +354,7 @@
                     </view>
                     <connections>
                         <outlet property="GlobalView" destination="1Yu-Xz-xjj" id="S4x-yW-uuc"/>
-                        <outlet property="imageGladysParam" destination="pR8-5P-HQ1" id="YXB-WN-2XN"/>
+                        <outlet property="imageGladysParam" destination="pR8-5P-HQ1" id="4Ly-3h-TLV"/>
                         <outlet property="keyAPIGladys" destination="vKa-mS-jIs" id="OK5-2N-Sw5"/>
                         <outlet property="labelAPIKey" destination="SiT-Au-FwT" id="QqS-gd-oqz"/>
                         <outlet property="labelAudioApplication" destination="gsf-ot-Wf3" id="WQz-aH-G0G"/>
@@ -564,6 +388,13 @@
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.32156862745098036" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -576,7 +407,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="jarvisIcon" width="102" height="129"/>
-        <image name="micro.png" width="50" height="100"/>
+        <image name="gladysIcon" width="90" height="90"/>
+        <image name="micro2.png" width="60" height="60"/>
     </resources>
 </document>

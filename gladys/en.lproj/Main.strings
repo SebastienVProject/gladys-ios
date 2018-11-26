@@ -10,8 +10,8 @@
 /* Class = "UILabel"; text = "taille police bulle"; ObjectID = "7sy-rz-2um"; */
 "7sy-rz-2um.text" = "bubble font size";
 
-/* Class = "UILabel"; text = "Entrez le numéro du port jarvis-api"; ObjectID = "90f-Vt-M8P"; */
-"90f-Vt-M8P.text" = "port number for jarvis api";
+/* Class = "UILabel"; text = "Entrez le numéro du port gladys-api"; ObjectID = "90f-Vt-M8P"; */
+"90f-Vt-M8P.text" = "port number for gladys api";
 
 /* Class = "UIBarButtonItem"; title = "help"; ObjectID = "620-bX-HHy"; */
 "620-bX-HHy.title" = "help";
@@ -31,13 +31,13 @@
 /* Class = "UILabel"; text = "Type de message"; ObjectID = "Mp3-dJ-cvT"; */
 "Mp3-dJ-cvT.text" = "Message type";
 
-/* Class = "UITextField"; placeholder = "http://0.0.0.0 ou http://jarvis.com"; ObjectID = "P0t-wf-3ou"; */
-"P0t-wf-3ou.placeholder" = "http://0.0.0.0 or http://jarvis.com";
+/* Class = "UITextField"; placeholder = "http://0.0.0.0 ou http://gladys.com"; ObjectID = "P0t-wf-3ou"; */
+"P0t-wf-3ou.placeholder" = "http://0.0.0.0 or http://gladys.com";
 
 /* Class = "UITextView"; text = "- Cliquer sur le micro, puis enregistrez votre demande. - Cliquer une nouvelle fois pour stopper l'enregistrement - lire / écouter la réponse faite par Gladys.  Penser au préalable à paramétrer l'url et le port du serveur sur lequel Gladys est installée. Indiquer également la sortie audio souhaitée."; ObjectID = "Rs9-gF-gZ6"; */
 "Rs9-gF-gZ6.text" = "- Cliquer sur le micro, puis enregistrez votre demande. - Cliquer une nouvelle fois pour stopper l'enregistrement - lire / écouter la réponse faite par Gladys.  Penser au préalable à paramétrer l'url et le port du serveur sur lequel Gladys est installée. Indiquer également la sortie audio souhaitée.";
 
-/* Class = "UILabel"; text = "Entrez la clé définie pour jarvis-api"; ObjectID = "SiT-Au-FwT"; */
+/* Class = "UILabel"; text = "Entrez la clé définie pour gladys-api"; ObjectID = "SiT-Au-FwT"; */
 "SiT-Au-FwT.text" = "Enter the key for gladys-api";
 
 /* Class = "UILabel"; text = "Votre message"; ObjectID = "c1h-Pe-JzK"; */
@@ -46,14 +46,14 @@
 /* Class = "UILabel"; text = "activation audio application"; ObjectID = "gsf-ot-Wf3"; */
 "gsf-ot-Wf3.text" = "audio activation on the application";
 
-/* Class = "UILabel"; text = "taille police jarvis"; ObjectID = "jW1-LU-4am"; */
-"jW1-LU-4am.text" = "Jarvis font size";
+/* Class = "UILabel"; text = "taille police gladys"; ObjectID = "jW1-LU-4am"; */
+"jW1-LU-4am.text" = "gladys font size";
 
 /* Class = "UINavigationItem"; title = "Gladys"; ObjectID = "kuk-be-FIe"; */
 "kuk-be-FIe.title" = "Gladys";
 
-/* Class = "UILabel"; text = "Entrez l'URL ou l'IP de votre serveur jarvis"; ObjectID = "paB-0a-2t8"; */
-"paB-0a-2t8.text" = "Enter the URL or IP of your jarvis server";
+/* Class = "UILabel"; text = "Entrez l'URL ou l'IP de votre serveur gladys"; ObjectID = "paB-0a-2t8"; */
+"paB-0a-2t8.text" = "Enter the URL or IP of your gladys server";
 
 /* Class = "UILabel"; text = "Votre email"; ObjectID = "tFE-AC-qVR"; */
 "tFE-AC-qVR.text" = "Your email";
