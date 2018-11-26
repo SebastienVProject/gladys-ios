@@ -28,6 +28,8 @@
 		AE5F82CD21A9C64A0050758A /* gladys - 48x48.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5F82CC21A9C64A0050758A /* gladys - 48x48.png */; };
 		AE5F82D521A9D08D0050758A /* micro2.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5F82D421A9D08D0050758A /* micro2.png */; };
 		AE5F82D721A9D0A70050758A /* micro2ON.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5F82D621A9D0A70050758A /* micro2ON.png */; };
+		AE6610AA21ACAA9100DAD3AE /* Overpass_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE6610A821ACAA9100DAD3AE /* Overpass_Bold.ttf */; };
+		AE6610AB21ACAA9100DAD3AE /* Overpass_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE6610A921ACAA9100DAD3AE /* Overpass_Regular.ttf */; };
 		AE71CBFA207183EC0066A786 /* microON.png in Resources */ = {isa = PBXBuildFile; fileRef = AE71CBF9207183EC0066A786 /* microON.png */; };
 		AEF5A64921AB43D20099B545 /* gladys - 48x48v2.png in Resources */ = {isa = PBXBuildFile; fileRef = AEF5A64821AB43D20099B545 /* gladys - 48x48v2.png */; };
 		B2F9B2FF736B986146342257 /* Pods_gladys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7158BB959F4084DB408CA1E1 /* Pods_gladys.framework */; };
@@ -65,6 +67,8 @@
 		AE5F82CC21A9C64A0050758A /* gladys - 48x48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gladys - 48x48.png"; path = "../../../gladys - 48x48.png"; sourceTree = "<group>"; };
 		AE5F82D421A9D08D0050758A /* micro2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = micro2.png; path = ../../../micro2.png; sourceTree = "<group>"; };
 		AE5F82D621A9D0A70050758A /* micro2ON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = micro2ON.png; path = ../../../micro2ON.png; sourceTree = "<group>"; };
+		AE6610A821ACAA9100DAD3AE /* Overpass_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Overpass_Bold.ttf; sourceTree = "<group>"; };
+		AE6610A921ACAA9100DAD3AE /* Overpass_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Overpass_Regular.ttf; sourceTree = "<group>"; };
 		AE71CBF9207183EC0066A786 /* microON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = microON.png; sourceTree = "<group>"; };
 		AEF5A64521AB07FF0099B545 /* gladys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gladys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF5A64821AB43D20099B545 /* gladys - 48x48v2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gladys - 48x48v2.png"; path = "../../../gladys - 48x48v2.png"; sourceTree = "<group>"; };
@@ -114,6 +118,7 @@
 		2D34E2091EE45EA000D84B15 /* gladys */ = {
 			isa = PBXGroup;
 			children = (
+				AE6610A721ACAA1100DAD3AE /* Font */,
 				2DCB57501EF29FB100D59B08 /* InfoPlist.strings */,
 				2DCB574B1EF29FB000D59B08 /* Localizable.strings */,
 				2D34E21C1EE4671400D84B15 /* gladys.entitlements */,
@@ -148,6 +153,15 @@
 				7158BB959F4084DB408CA1E1 /* Pods_gladys.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE6610A721ACAA1100DAD3AE /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				AE6610A821ACAA9100DAD3AE /* Overpass_Bold.ttf */,
+				AE6610A921ACAA9100DAD3AE /* Overpass_Regular.ttf */,
+			);
+			name = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +232,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE6610AB21ACAA9100DAD3AE /* Overpass_Regular.ttf in Resources */,
+				AE6610AA21ACAA9100DAD3AE /* Overpass_Bold.ttf in Resources */,
 				2D235C011EE4B126003F7F1A /* iconeOption.png in Resources */,
 				AE71CBFA207183EC0066A786 /* microON.png in Resources */,
 				2DE7DCFE1EEB503F001179A0 /* micro.png in Resources */,

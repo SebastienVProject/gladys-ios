@@ -8,6 +8,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Overpass_Regular.ttf">
+            <string>Overpass-Reg</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--gladys-->
         <scene sceneID="tne-QT-ifu">
@@ -62,6 +67,7 @@
                                     <constraint firstAttribute="width" constant="60" id="QL9-pJ-AyS"/>
                                     <constraint firstAttribute="height" constant="60" id="e6A-eT-ibl"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" image="micro2.png"/>
                                 <connections>
                                     <action selector="microphoneTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zpa-3a-mqi"/>
@@ -128,24 +134,24 @@
                                 <rect key="frame" x="26" y="114" width="323" height="503"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="ILx-93-s8G">
-                                        <rect key="frame" x="0.0" y="0.0" width="308" height="48.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="312.5" height="50.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entrez l'URL ou l'IP de votre serveur gladys" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="paB-0a-2t8">
-                                                <rect key="frame" x="0.0" y="0.0" width="308" height="18.5"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="312.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="16"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
+                                                    <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="25"/>
                                                 </variation>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="http://0.0.0.0 ou http://gladys.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P0t-wf-3ou">
-                                                <rect key="frame" x="0.0" y="18.5" width="308" height="30"/>
+                                                <rect key="frame" x="0.0" y="20.5" width="312.5" height="30"/>
                                                 <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
+                                                    <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="24"/>
                                                 </variation>
                                                 <connections>
                                                     <action selector="updateUrlGladys:" destination="Gen-Ns-wrN" eventType="editingDidEnd" id="gle-X6-72i"/>
@@ -157,24 +163,24 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="zVN-4F-l8M">
-                                        <rect key="frame" x="0.0" y="77" width="253.5" height="49.5"/>
+                                        <rect key="frame" x="0.0" y="77" width="259" height="50.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entrez le numéro du port gladys-api" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90f-Vt-M8P">
-                                                <rect key="frame" x="0.0" y="0.0" width="253.5" height="18.5"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="259" height="20.5"/>
+                                                <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="16"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
+                                                    <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="25"/>
                                                 </variation>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="8080" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yb2-VS-qam">
-                                                <rect key="frame" x="0.0" y="18.5" width="60.5" height="31"/>
+                                                <rect key="frame" x="0.0" y="20.5" width="64.5" height="30"/>
                                                 <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="24"/>
+                                                    <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="24"/>
                                                 </variation>
                                                 <connections>
                                                     <action selector="updatePortGladys:" destination="Gen-Ns-wrN" eventType="editingDidEnd" id="44t-sI-4Df"/>
@@ -183,24 +189,24 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="nmf-XH-tnl">
-                                        <rect key="frame" x="0.0" y="155" width="253.5" height="48.5"/>
+                                        <rect key="frame" x="0.0" y="154.5" width="258" height="50.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entrez la clé définie pour gladys-api" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SiT-Au-FwT">
-                                                <rect key="frame" x="0.0" y="0.0" width="253.5" height="18.5"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="258" height="20.5"/>
+                                                <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="16"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="25"/>
+                                                    <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="25"/>
                                                 </variation>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="facultatif" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vKa-mS-jIs">
-                                                <rect key="frame" x="0.0" y="18.5" width="253.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="20.5" width="258" height="30"/>
                                                 <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                 <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
+                                                    <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="24"/>
                                                 </variation>
                                                 <connections>
                                                     <action selector="updateKeyApiGladys:" destination="Gen-Ns-wrN" eventType="editingDidEnd" id="mFA-FM-Ccm"/>
@@ -212,15 +218,15 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleAspectFill" semanticContentAttribute="spatial" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="81e-JV-7uK">
-                                        <rect key="frame" x="0.0" y="241" width="323" height="31"/>
+                                        <rect key="frame" x="0.0" y="241.5" width="323" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="activation audio serveur" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Jg-z2-1jd">
-                                                <rect key="frame" x="0.0" y="6" width="274" height="18.5"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <rect key="frame" x="0.0" y="5" width="274" height="20.5"/>
+                                                <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="16"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
+                                                    <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="25"/>
                                                 </variation>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fh8-3S-me7">
@@ -236,11 +242,11 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="activation audio application" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsf-ot-Wf3">
                                                 <rect key="frame" x="0.0" y="0.0" width="274" height="31"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="16"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
+                                                    <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="25"/>
                                                 </variation>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WSl-o3-j29">
@@ -252,15 +258,15 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="oVX-8c-lxI" userLabel="Stack View police bulle">
-                                        <rect key="frame" x="0.0" y="396.5" width="323" height="29"/>
+                                        <rect key="frame" x="0.0" y="397" width="323" height="29"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="taille police bulle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sy-rz-2um" userLabel="libelle">
-                                                <rect key="frame" x="0.0" y="0.0" width="117.5" height="29"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="122" height="29"/>
+                                                <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="16"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
+                                                    <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="25"/>
                                                 </variation>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AdM-sO-dEj">
@@ -390,10 +396,10 @@
                         <color key="tintColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="barTintColor" red="0.0" green="0.32156862745098036" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                            <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="17"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
-                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                            <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="17"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
